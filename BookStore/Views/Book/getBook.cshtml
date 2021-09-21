@@ -1,0 +1,24 @@
+@{
+    ViewBag.Title = "Get Book"; 
+}
+
+<table class="table table-striped">
+            
+            <tr>
+                <td>ISBN</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Page Count</td>
+                <td>Type</td>
+            </tr>
+
+            @foreach(BookStore.Models.Book book in Model){
+            <tr>
+                <td>@book.Isbn</td>
+                <td>@book.Title</td>
+                <td>@book.Price</td>
+                <td>@book.PageCount</td>
+                <td>@book.Type</td>
+            </tr>
+            }
+        </table>

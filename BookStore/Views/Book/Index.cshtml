@@ -1,0 +1,36 @@
+@{
+    ViewBag.Title = "Book";
+}
+
+<html>
+<head></head>
+    <body>
+        <form method="POST">
+            <div>
+                <input type="text" placeholder="Title" name="title"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Price" name="price"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Page Count" name="page"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Type" name="type"/>
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+        <div>
+         <button><a asp-area="" asp-controller="Book" asp-action="getBook">Get Book</a></button>
+        </div>
+        <div>
+            <button><a asp-area="" asp-controller="Book" asp-action="UpdatePage">Update</a></button>
+        </div>
+        <div>
+            <button><a asp-area="" asp-controller="Book" asp-action="DeletePage">Delete</a></button>
+        </div>
+    </body>
+
+</html>

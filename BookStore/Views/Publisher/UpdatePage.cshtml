@@ -1,0 +1,25 @@
+@{
+    ViewBag.Title = "Update Page"; 
+}
+
+<form method="POST">
+    <span>
+        <input type="text" placeholder="Code" name="code"/>
+    </span>
+    <span>
+        <input type="text" placeholder="Change Phone 1" name="phone_1"/>
+    </span>
+    <span>
+        <input type="text" placeholder="Change Phone 2" name="phone_2"/>
+    </span>
+    <span>
+        <input type="submit" asp-action="Update"/>
+    </span>
+     <h5>Get The Data After Change: </h5>
+    <span>
+        <button>
+            <a asp-area="" asp-controller="publisher" asp-action="getPublisher">Get Publisher</a>
+        </button>
+    </span>
+</form>
+   

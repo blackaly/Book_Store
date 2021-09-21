@@ -1,0 +1,19 @@
+@{
+    ViewBag.Title = "Delete Page"; 
+}
+
+<form method="POST">
+    <span>
+        <input type="text" placeholder="Code" name="code"/>
+    </span>
+    <span>
+        <input type="submit" asp-action="Delete"/>
+    </span>
+     <h5>Get The Data After Change: </h5>
+    <span>
+        <button>
+            <a asp-area="" asp-controller="Publisher" asp-action="getPublisher">Get Publisher</a>
+        </button>
+    </span>
+</form>
+   

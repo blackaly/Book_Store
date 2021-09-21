@@ -1,0 +1,25 @@
+@{
+    ViewBag.Title = "Update Page"; 
+}
+
+<form method="POST">
+    <span>
+        <input type="text" placeholder="ID" name="id"/>
+    </span>
+    <span>
+        <input type="text" placeholder="Change First Name" name="fname"/>
+    </span>
+    <span>
+        <input type="text" placeholder="Change Last Name" name="lname"/>
+    </span>
+    <span>
+        <input type="submit" asp-action="Update"/>
+    </span>
+     <h5>Get The Data After Change: </h5>
+    <span>
+        <button>
+            <a asp-area="" asp-controller="Author" asp-action="getAuthor">Get Author</a>
+        </button>
+    </span>
+</form>
+   

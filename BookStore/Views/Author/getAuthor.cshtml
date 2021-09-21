@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Get Author"; 
+}
+
+<table class="table table-striped">
+            
+            <tr>
+                <td>ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+            </tr>
+
+            @foreach(BookStore.Models.Author author in Model){
+            <tr>
+                <td>@author.Id</td>
+                <td>@author.Fname</td>
+                <td>@author.Lname</td>
+            </tr>
+            }
+            
+        </table>

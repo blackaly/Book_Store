@@ -1,0 +1,25 @@
+@{
+    ViewBag.Title = "Get Publisher"; 
+}
+
+<table class="table table-striped">
+            
+            <tr>
+                <td>Publisher Code</td>
+                <td>Name</td>
+                <td>City</td>
+                <td>Phone_1</td>
+                <td>Phone_2</td>
+            </tr>
+
+            @foreach(BookStore.Models.Publisher publisher in Model){
+            <tr>
+                <td>@publisher.Code</td>
+                <td>@publisher.Name</td>
+                <td>@publisher.City</td>
+                <td>@publisher.Phone_1</td>
+                <td>@publisher.Phone_2</td>
+            </tr>
+            }
+            
+        </table>

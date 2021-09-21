@@ -1,0 +1,37 @@
+@{
+    ViewBag.Title = "Publisher";
+}
+
+
+<html>
+<head></head>
+    <body>
+        <form method="POST">
+            <div>
+                <input type="text" placeholder="Name of Publisher" name="name"/>
+            </div>
+            <div>
+                <input type="text" placeholder="City" name="city"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Phone_1" name="phone_1"/>
+            </div>
+            <div>
+                <input type="text" placeholder="Phone_2" name="phone_2"/>
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+        <div>
+         <button><a asp-area="" asp-controller="Publisher" asp-action="getPublisher">Get Publisher</a></button>
+        </div>
+        <div>
+         <button><a asp-area="" asp-controller="Publisher" asp-action="UpdatePage">Update</a></button>
+        </div>
+        <div>
+         <button><a asp-area="" asp-controller="Publisher" asp-action="DeletePage">Delete</a></button>
+        </div>
+    </body>
+
+</html>
